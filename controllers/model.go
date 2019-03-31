@@ -18,7 +18,7 @@ type Score struct {
 
 func init()  {
 	orm.RegisterDriver("mysql", orm.DRMySQL)
-	orm.RegisterDataBase("default","mysql","root:@tcp(127.0.0.1:3306)/test?charset=utf8mb4",30)
+	orm.RegisterDataBase("default","mysql","root:@tcp(127.0.0.1:3306)/beego_source_analysis?charset=utf8mb4",30)
 	orm.RegisterModel(new(Score))
 }
 
